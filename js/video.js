@@ -5,10 +5,6 @@ window.addEventListener("load", function() {
     video = document.getElementById("player1");
     video.autoplay = false;
     video.loop = false;
-    let volumeSlider = document.getElementById("slider");
-    let volumeSpan = document.getElementById("volume");
-    volumeSpan.textContent = volumeSlider.value + "%";
-    video.volume = volumeSlider.value / 100;
 
     // Play
     document.getElementById("play").addEventListener("click", function() {
